@@ -19,7 +19,8 @@ This is a collection of applications, that includes password manager web applica
 
 ## Demo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QmZtMtAWfYY?si=a5htWjY-nKN9wcsn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![EasyLogon demo](https://img.youtube.com/vi/QmZtMtAWfYY/maxresdefault.jpg)](https://youtu.be/QmZtMtAWfYY)
+> Source: https://youtu.be/QmZtMtAWfYY
 
 ## Features
 
