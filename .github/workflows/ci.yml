@@ -39,6 +39,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: zoexx/github-action-json-file-properties@release
+        id: package_json
+        with:
+          file_path: "package.json"
+
       - uses: docker/metadata-action@v5
         id: meta
         with:
@@ -47,7 +52,8 @@ jobs:
             ghcr.io/${{ github.repository }}
           tags: |
             latest
-            ${{ github.sha }}
+            ${{steps.package_json.outputs.version}}
+            ${{steps.package_json.outputs.version}}-${{ github.sha }}
 
       - name: "Login to Docker Hub"
         if: github.event_name != 'pull_request' || github.event.inputs.push == 'true'
