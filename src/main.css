@@ -1,0 +1,75 @@
+body
+{
+	margin: 0;
+	user-select: none;
+	overflow-x: hidden;
+}
+
+#root > .fui-FluentProvider
+{
+	min-height: 100vh;
+	display: grid;
+}
+
+p, h1, h2, h3
+{
+	margin: 0;
+}
+
+@keyframes fadeIn
+{
+	0%
+	{
+		opacity: 0;
+	}
+
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes scaleUpFade
+{
+	0%
+	{
+		opacity: 0;
+		transform: scale(0.8);
+	}
+
+	100%
+	{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes slideLeftIn
+{
+	0%
+	{
+		opacity: 0;
+		transform: translateX(40px);
+	}
+
+	100%
+	{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideRightIn
+{
+	0%
+	{
+		opacity: 0;
+		transform: translateX(-40px);
+	}
+
+	100%
+	{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="mask-icon" href="/favicon.svg" color="#0078d4">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<meta name="description" content="Log in on any device with a few clicks" />
+	<meta name="copyright" content="©2025 Eugene Fox" />
+	<meta name="lanugage" content="en_us" />
+	<meta name="author" content="Eugene Fox" />
+
+	<meta property="og:title" content="EasyLogon" />
+	<meta property="og:description" content="Sign in on any device with a few clicks" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://ezlog.app" />
+
+	<meta property="og:image" content="https://ezlog.app/banner.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="1024" />
+	<meta property="og:image:height" content="512" />
+
+	<script type="text/javascript">
+		if ("serviceWorker" in navigator)
+		{
+			navigator.serviceWorker
+				.register("/sw.js");
+		}
+	</script>
+
+	<meta name="application-title" content="EasyLogon" />
+	<title>EasyLogon</title>
+</head>
+
+<body>
+	<div id="root"></div>
+	<script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

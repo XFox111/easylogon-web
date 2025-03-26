@@ -1,0 +1,63 @@
+name: "🚀 New feature proposal"
+description: Suggest a feature idea for the website
+title: "[Feature]: "
+labels: ["feature", "needs-triage"]
+assignees:
+  - xfox111
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest and taking the time to fill out this form!
+
+  - type: markdown
+    attributes:
+      value: |
+        > [!IMPORTANT]
+        > This repository is for tracking issues within **EasyLogon web application** only.
+        >
+        > List of all repositories:
+        > - [xfox111/easylogon-mobile](https://github.com/xfox111.net/easylogon-mobile) (mobile application)
+        > - [xfox111/easylogon-plugin](https://github.com/xfox111.net/easylogon-plugin) (website plugin)
+        > - [xfox111/easylogon-extension](https://github.com/xfox111.net/easylogon-plugin) (browser extension)
+
+  - type: textarea
+    id: proposition
+    attributes:
+      label: Proposed solution
+      description: Describe the solution you'd like
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification
+      description: Is your feature request related to a problem? Please describe.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alts
+    attributes:
+      label: Alternatives
+      description: Describe alternatives you've considered.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: Check that there isn't already an issue that request the same feature to avoid creating a duplicate.
+          required: true
