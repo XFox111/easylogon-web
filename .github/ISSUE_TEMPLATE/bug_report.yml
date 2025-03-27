@@ -17,9 +17,9 @@ body:
         > This repository is for tracking issues within **EasyLogon web application** only.
         >
         > List of all repositories:
-        > - [xfox111/easylogon-mobile](https://github.com/xfox111.net/easylogon-mobile) (mobile application)
-        > - [xfox111/easylogon-plugin](https://github.com/xfox111.net/easylogon-plugin) (website plugin)
-        > - [xfox111/easylogon-extension](https://github.com/xfox111.net/easylogon-plugin) (browser extension)
+        >   - [xfox111/easylogon-mobile](https://github.com/xfox111.net/easylogon-mobile) (mobile application)
+        >   - [xfox111/easylogon-plugin](https://github.com/xfox111.net/easylogon-plugin) (website plugin)
+        >   - [xfox111/easylogon-extension](https://github.com/xfox111.net/easylogon-plugin) (browser extension)
 
   - type: textarea
     id: description
@@ -59,7 +59,7 @@ body:
     id: version
     attributes:
       label: Version and commit hash
-      placeholder: e.g. Microsoft Edge 119.0.2151.58
+      placeholder: e.g. 2.0.0 (commit: 04fb8387948a89e5379a35500bf744ae7f2e6ec4)
       description: Go to the application, click "About" and copy the "Version" string
     validations:
       required: true
