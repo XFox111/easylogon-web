@@ -60,6 +60,17 @@ yarn lint			# Lint the project with ESLint
 yarn build			# Build the project for production
 ```
 
+Modify endpoints in .env file:
+
+```
+# .env
+VITE_SIGNALR_URL=http://localhost:8000/ws		# SignalR endpoint
+VITE_ENDPOINT_URL=http://localhost:8000/send		# Data send endpoint
+```
+
+> [!NOTE]
+> You will need to deploy [backbone server](https://github.com/xfox111/backbone), to enable main features
+
 To build a Docker image, run:
 
 ```bash
