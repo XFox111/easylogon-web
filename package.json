@@ -11,7 +11,7 @@
 	},
 	"dependencies": {
 		"@fluentui/react-components": "^9.66.5",
-		"@fluentui/react-icons": "^2.0.302",
+		"@fluentui/react-icons": "^2.0.305",
 		"@microsoft/signalr": "^8.0.7",
 		"crypto-js": "^4.2.0",
 		"qrcode.react": "^4.2.0",
