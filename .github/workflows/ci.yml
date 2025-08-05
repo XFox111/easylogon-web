@@ -53,7 +53,6 @@ jobs:
           tags: |
             latest
             ${{steps.package_json.outputs.version}}
-            ${{steps.package_json.outputs.version}}-${{ github.sha }}
 
       - name: "Login to Docker Hub"
         if: github.event_name != 'pull_request' || github.event.inputs.push == 'true'
