@@ -1,0 +1,46 @@
+name: Audit pipeline
+
+on:
+  push:
+    paths-ignore:
+      - '.devcontainer/*'
+      - '.github/*'
+      - '!.github/workflows/audit.yml'
+      - '.vscode/*'
+      - '**.md'
+      - '.env*'
+      - 'LICENSE'
+      - 'COPYING'
+      - '.git*'
+  pull_request:
+    paths-ignore:
+      - '.devcontainer/*'
+      - '.github/*'
+      - '!.github/workflows/audit.yml'
+      - '.vscode/*'
+      - '**.md'
+      - '.env*'
+      - 'LICENSE'
+      - 'COPYING'
+      - '.git*'
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    container: node:24
+
+    steps:
+      - uses: actions/checkout@v5
+      - run: yarn install
+      - run: yarn audit
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          tags: "easylogon-web:ci"
