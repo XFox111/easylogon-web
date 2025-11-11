@@ -11,6 +11,10 @@ import AboutDialog from "../dialogs/AboutDialog";
 import DownloadDialog from "../dialogs/DownloadDialog";
 import QnaDialog from "../dialogs/QnaDialog";
 
+const AboutIcon: ic.FluentIcon = ic.bundleIcon(ic.InfoFilled, ic.InfoRegular);
+const QnaIcon: ic.FluentIcon = ic.bundleIcon(ic.LockClosedFilled, ic.LockClosedRegular);
+// const DevIcon: ic.FluentIcon = ic.bundleIcon(ic.CodeFilled, ic.CodeRegular);
+
 export default function StartPage(): ReactElement
 {
 	const navigate = useNavigate();
@@ -20,10 +24,6 @@ export default function StartPage(): ReactElement
 	);
 
 	const cls = useStyles();
-
-	const AboutIcon: ic.FluentIcon = ic.bundleIcon(ic.InfoFilled, ic.InfoRegular);
-	const QnaIcon: ic.FluentIcon = ic.bundleIcon(ic.LockClosedFilled, ic.LockClosedRegular);
-	// const DevIcon: ic.FluentIcon = ic.bundleIcon(ic.CodeFilled, ic.CodeRegular);
 
 	return (
 		<main className={ cls.root }>

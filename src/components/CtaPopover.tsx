@@ -11,6 +11,7 @@ export default function CtaPopover(): ReactElement
 	useEffect(() =>
 	{
 		// We have to open it manually, otherwise it struggles to find the target anchor
+		// eslint-disable-next-line react-hooks/set-state-in-effect
 		setCtaOpen(true);
 	}, []);
 
