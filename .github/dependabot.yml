@@ -15,21 +15,15 @@
         interval: monthly
       rebase-strategy: disabled
       groups:
-        dev-deps:
-          patterns:
-            - "*"
-          dependency-type: development
-          exclude-patterns:
-            - "@types/react"
-            - "@types/react-dom"
-            - "scheduler"
         deps:
           patterns:
             - "*"
-          dependency-type: production
           exclude-patterns:
             - "react"
             - "react-dom"
+            - "@types/react"
+            - "@types/react-dom"
+            - "scheduler"
         react:
           patterns:
             - "react"
