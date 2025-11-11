@@ -22,7 +22,7 @@
 		"react-router-dom": "^7.9.3"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.37.0",
+		"@eslint/js": "^9.39.1",
 		"@types/crypto-js": "^4.2.2",
 		"@types/react": "^19.2.0",
 		"@types/react-dom": "^19.2.0",
