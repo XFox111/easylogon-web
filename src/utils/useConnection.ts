@@ -18,7 +18,7 @@ export default function useConnection(onSuccess: (data: UserData) => void, onErr
 
 		connection.onreconnecting(() => setState("reconnecting"));
 		connection.onreconnected(() => setState("connected"));
-		connection.on("ReceiveData", encryptedData =>
+		connection.on("OnMessage", encryptedData =>
 		{
 			const userData = decryptMessage<UserData>(encryptedData, key);
 
