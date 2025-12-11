@@ -2,7 +2,6 @@ import { lazy, ReactElement } from "react";
 import { useTheme } from "./utils/useTheme";
 import { FluentProvider } from "@fluentui/react-components";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import StartPage from "./pages/StartPage";
 import SuccessPage from "./pages/SuccessPage";
 import ErrorPage from "./pages/ErrorPage";
@@ -25,9 +24,7 @@ export default function App(): ReactElement
 				</Routes>
 			</BrowserRouter>
 
-			<Helmet>
-				<meta name="theme-color" content={ theme.colorNeutralBackground1 } />
-			</Helmet>
+			<meta name="theme-color" content={ theme.colorNeutralBackground1 } />
 		</FluentProvider>
 	);
 }
