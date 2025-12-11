@@ -71,12 +71,6 @@ export const useStyles = makeStyles({
 		opacity: "0",
 		pointerEvents: "none"
 	},
-	u24_icon:
-	{
-		height: "unset",
-		width: "unset",
-		marginRight: tokens.spacingHorizontalMNudge
-	},
 	footer:
 	{
 		display: "flex",

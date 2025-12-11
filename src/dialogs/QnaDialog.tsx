@@ -46,11 +46,11 @@ export default function QnaDialog(): ReactElement
 						<div className={ cls.section }>
 							<fui.Subtitle2 as="h2">How is my data secured?</fui.Subtitle2>
 							<fui.Text as="p">
-								First, your data is end-to-end encrypted using AES-256 algorithm (which was, by the
+								Your data is end-to-end encrypted using AES-256 algorithm (which was, by the
 								way, <fui.Link href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard#Security" target="_blank">
 									approved by the NSA for encrypting top secret information</fui.Link>).
 								While the encryption key is symmetric (meaning it can be used for both encryption and decryption),
-								since the key is never send through the network, it can be only intercepted using spyware,
+								since the key is never sent through the network, it can be only intercepted using spyware,
 								or by someone who is standing right behind you.
 							</fui.Text>
 						</div>
@@ -66,7 +66,7 @@ export default function QnaDialog(): ReactElement
 						</div>
 
 						<div className={ cls.section }>
-							<fui.Subtitle2 as="h2">How do I know if you are lying?</fui.Subtitle2>
+							<fui.Subtitle2 as="h2">How do I know if you are telling the truth?</fui.Subtitle2>
 							<fui.Text as="p">
 								<fui.Link href="http://at.xfox111.net/easylogon-src" target="_blank">We have released souce code for each component of this service on GitHub</fui.Link>,
 								so every aspect of the system, and every future change can be viewed and verified by anyone.
