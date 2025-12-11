@@ -6,7 +6,6 @@ import { useStyles } from "./StartPage.styles";
 import { QRCodeSVG } from "qrcode.react";
 import MetaTitle from "../utils/MetaTitle";
 import useConnection from "../utils/useConnection";
-import StandWithUkraine from "../assets/StandWithUkraine.svg";
 import AboutDialog from "../dialogs/AboutDialog";
 import DownloadDialog from "../dialogs/DownloadDialog";
 import QnaDialog from "../dialogs/QnaDialog";
@@ -79,12 +78,6 @@ export default function StartPage(): ReactElement
 					3. Select an account to send<br aria-hidden />
 					4. Copy and paste your info on a login page
 				</fui.Text>
-
-				<fui.Button appearance="subtle" as="a" href="https://u24.gov.ua" target="_blank"
-					icon={ { className: cls.u24_icon, children: <StandWithUkraine /> } }
-				>
-					#StandWithUkraine
-				</fui.Button>
 
 			</article>
 			<footer className={ cls.footer }>
