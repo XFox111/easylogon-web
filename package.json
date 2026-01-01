@@ -15,8 +15,8 @@
 		"@microsoft/signalr": "^10.0.0",
 		"crypto-js": "^4.2.0",
 		"qrcode.react": "^4.2.0",
-		"react": "^19.2.1",
-		"react-dom": "^19.2.1",
+		"react": "^19.2.3",
+		"react-dom": "^19.2.3",
 		"react-markdown": "^10.1.0",
 		"react-router-dom": "^7.10.1"
 	},
