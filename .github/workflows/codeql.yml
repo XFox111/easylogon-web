@@ -13,7 +13,7 @@ name: "CodeQL Advanced"
 
 on:
   push:
-    branches: [ "main", "next" ]
+    branches: [ "main" ]
     paths-ignore:
       - '**.md'
       - 'LICENSE'
@@ -21,7 +21,7 @@ on:
       - '.vscode/*'
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ "main", "next" ]
+    branches: [ "main" ]
     paths-ignore:
       - '**.md'
       - 'LICENSE'

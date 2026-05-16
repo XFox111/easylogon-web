@@ -8,7 +8,6 @@ updates:
 
   - package-ecosystem: "npm"
     directory: "/"
-    target-branch: "next"
     assignees:
       - "XFox111"
     schedule:
@@ -43,39 +42,36 @@ updates:
 
   - package-ecosystem: "github-actions"
     directory: "/"
-    target-branch: "next"
     assignees:
       - "XFox111"
     schedule:
       interval: monthly
     rebase-strategy: disabled
     groups:
-      all:
+      actions:
         patterns:
           - "*"
 
   - package-ecosystem: "devcontainers"
     directory: "/"
-    target-branch: "next"
     assignees:
       - "XFox111"
     schedule:
       interval: monthly
     rebase-strategy: disabled
     groups:
-      all:
+      devcontainers:
         patterns:
           - "*"
 
   - package-ecosystem: "docker"
     directory: "/"
-    target-branch: "next"
     assignees:
       - "XFox111"
     schedule:
       interval: monthly
     rebase-strategy: disabled
     groups:
-      all:
+      docker:
         patterns:
           - "*"
