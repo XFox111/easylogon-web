@@ -1,5 +1,5 @@
 # Use the official Node.js 20 image as the base image
-FROM node:25 AS builder
+FROM node:26 AS builder
 
 ARG SIGNALR_URL=http://localhost:8080/ws
 ARG ENDPOINT_URL=http://localhost:8080/send
