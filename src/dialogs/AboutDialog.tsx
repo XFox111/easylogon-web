@@ -50,11 +50,15 @@ export default function AboutDialog(): ReactElement
 
 						<fui.Text as="p">
 							<fui.Link href="https://github.com/xfox111/easylogon-web" target="_blank">Source code</fui.Link><br aria-hidden />
-							<fui.Link href="https://xfox111.net" target="_blank">My website</fui.Link><br aria-hidden />
 							<fui.Link href="https://bsky.app/profile/xfox111.net" target="_blank">Follow me on Bluesky</fui.Link>
 						</fui.Text>
 
-						<fui.Text as="p">©{ new Date().getFullYear() } Eugene Fox. All rights reserved</fui.Text>
+						<fui.Text as="p">
+							©{ new Date().getFullYear() } <fui.Link href="https://xfox111.net" target="_blank">Eugene Fox</fui.Link>.
+							All rights reserved.
+						</fui.Text>
+
+						<fui.Image className={ cls.img } src="/fox.svg" />
 					</fui.DialogContent>
 				</fui.DialogBody>
 			</fui.DialogSurface>
@@ -72,5 +76,10 @@ const useStyles = fui.makeStyles({
 	versionText:
 	{
 		userSelect: "text"
+	},
+	img:
+	{
+		height: "120px",
+		alignSelf: "end"
 	}
 });
